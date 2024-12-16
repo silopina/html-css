@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formas</title>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulário de Exemplo</title>
+    </head>
+    <body>
+    
+        <h2>Formulário de Cadastro</h2>
+        <form action="/submit_form" method="post">
+            <!-- Campo de texto para o nome -->
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="nome" required> <br><br>
+    
+            <!-- Opções de rádio para selecionar o gênero -->
+            <label>Gênero:</label> <br>
+            <input type="radio" id="masculino" name="genero" value="masculino" required>
+            <label for="masculino">Masculino</label><br>
+            
+            <input type="radio" id="feminino" name="genero" value="feminino" required>
+            <label for="feminino">Feminino</label><br><br>
+    
+            <!-- Caixa de seleção para inscrição -->
+            <input type="checkbox" id="inscrever" name="inscricao" value="sim">
+            <label for="inscrever">Quero receber novidades por e-mail</label><br><br>
+    
+
+            <label for="x">Email</label>
+            <input type="text" id="x" name="email" placeholder="example@domain.com" required><br><br>
+
+            <label for="y">Number</label>
+            <input type="number" id="y" name="number" value="1" required><br><br>
+
+            <label for="z">Telefone</label>
+            <input type="tel" id="z" name="telefone" pattern="\d{3} \d{2} \d{2}" placeholder="955 
+            56 76" required><br><br>
+
+            <label for="a">Time</label>
+            <input type="time" name="tempo" id="a" required><br><br>
+
+            <label for="b">Link</label>
+            <input type="url" name="url" id="b" placeholder="https://chatgpt.com/c/6" required><br><br>
+
+            <label for="c">Data</label>
+            <input type="date" name="Data" id="c" required><br><br>
+
+            <label for="d">Research</label>
+            <input type="search" name="Busca" id="d" required><br><br>
+                
+            <label for="e">Password</label><br>
+            selecione a moeda
+            <input type="password" name="Password" id="e" required><br><br>
+
+            <label for="f">week</label>
+            <input type="week" name="Semana" id="f" placeholder="monday" required><br><br>
+
+            <label for="pro">programaçao</label>
+            <select name="programaçao" id="pro">
+                <option value="Python">Python</option>
+                <option value="c">C</option>
+                <option value="c++">C++</option>
+                <option value="Javascript">Js</option>
+                <option value="Html5">html5</option>
+
+
+
+
+            </select>
+
+             <!-- Botão de envio -->
+             <input type="submit" value="Enviar"><br>
+                
+             
+        </form>
+    
+    </body>
+    </html>
+    
+    
+</body>
+</html>

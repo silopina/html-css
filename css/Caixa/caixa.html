@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixa</title>
+    <style>
+        h1{ /*block-level*/
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+
+           /* border-width: 10px;
+            border-style: solid;
+            border-color: darkslategray;    tem de ser nessa ordem que vamos colocar na mesma linha*/ 
+
+            border: 10px solid darkslategray;
+
+           /* padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px; tem de ser nessa ordem*/
+
+            /*padding: 10px 10px 10px 10px; como todos os quatros tem mesma medida vamos colocar somente uma medida que representa os 4*/
+
+            padding: 10px;
+
+
+            /*margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 35px;
+            margin-left: 20px;
+
+            margin: 20px 20px 35px 20px; se  quisermos centralizar vamos fazer o seguinte*/
+
+            margin: 20px auto 35px auto;
+
+            /*outline-width: 2px;
+            outline-style: dashed;
+            outline-color: red;*/
+
+            outline: 2px dashed red;
+
+
+        }
+        a{  /*inline-level*/
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+            
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box level</h1>
+    <p>Paragrafos também sao exemplos de box level, mas os <a href="#">links sao exemplos de inline level</a></p>
+
+
+</body>
+</html>
