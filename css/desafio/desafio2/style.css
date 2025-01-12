@@ -1,27 +1,41 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kaushan+Script&family=Passion+One:wght@400;700;900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sriracha&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --font1: Verdana, Geneva, Tahoma, sans-serif;
+    --font2: "Passion One", serif;
+    --font3: "Sriracha", serif;
+}
 
 *{
+    
     margin: 0px;
     padding: 0px;
 }
 html,body{
     background-color: darkgray;
     min-height: 100vh;
+    font-family: var(--font1);
 }
 header{
     background-color: black;
     color: white;
     text-align: center;
+    font-family: var(--font2);
 
 
 }
 header>h1{
     padding-top: 50px;
     font-variant: small-caps;
+    font-size: 10vh; 
+
 
 }
 header>p{
     padding-bottom: 50px;
+    font-size: 1em;
+
 
 }
 a{
@@ -37,6 +51,8 @@ section{
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--font3);
+    font-size: 3.5vh;
 
 }
 .normal{
@@ -53,7 +69,8 @@ section{
 }
 .image>p{
     background-color: rgba(0, 0, 0, 0.37);
-    width: 400px;
+    display: inline-block;
+    padding: 5px;
 
 
 }
