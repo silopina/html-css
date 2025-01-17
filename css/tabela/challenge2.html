@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+            width: 400px;
+        }
+        td,th{
+            border: 1px,solid black;
+            padding: 8px;
+        }
+        thead{
+            background-color: gray;
+            color: white;
+        }
+        .a{
+            font-weight: bold;
+        }
+        .med{
+            background-color: gray;
+            color: white;
+            font-weight: bold;
+
+        }
+    </style>
+
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2">Area</th>
+                <th rowspan="2">Subjescts</th>
+                <th colspan="2">Grade</th>
+                <th rowspan="2">Average</th>
+            </tr> 
+            <tr>
+                <th>Grade 1</th>
+                <th>Grade 2</th>
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="4">Exact</th>
+                <td>Mathematics</td>
+                <td>16</td>
+                <td>18</td>
+                <td>17</td>
+            </tr>
+            <tr>
+                <td>Physical</td>
+                <td>13.4</td>
+                <td>15.5</td>
+                <td>14.45</td>
+            </tr>
+            <tr>
+                <td>Chemistry</td>
+                <td>18</td>
+                <td>17</td>
+                <td>17.5</td>
+            </tr>
+            <tr>
+                <td>Biology</td>
+                <td>18</td>
+                <td>18</td>
+                <td>18</td>
+            </tr>
+            <tr class="med">
+                <td colspan="4">Exact Average</td>
+                <td class="a">16.73</td>
+            </tr>
+            <tr>
+                <th rowspan="2">Humanities</th>
+                <td>History</td>
+                <td>19</td>
+                <td>18.5</td>
+                <td>18.75</td>
+            </tr>
+            <tr>
+                <td>Geography</td>
+                <td>19</td>
+                <td>19</td>
+                <td>19</td>
+            </tr>
+            <tr class="med">
+                <td colspan="4">Humanities Average</td>
+                <td class="a">18.88</td>
+            </tr>
+
+        </tbody>
+        
+    </table>
+</html>
