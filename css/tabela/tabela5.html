@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+            width: 350px;  
+        }
+        td,th{
+            border: 1px solid black;
+            padding: 5px;
+            
+
+        }
+        col.name, .prof{
+            background-color: blanchedalmond;
+        }
+        col.group{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>Table exercise</h1>
+    <table>
+        <colgroup>
+            <col class="name">
+            <col class="group" span="2">
+            <col class="prof">
+        </colgroup>
+        <caption>Register</caption>
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Sex</th>
+            <th scope="col">Age</th>
+            <th scope="col">Profission</th>
+
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Journalist</td>
+        </tr>
+        <tr>
+            <td>Claudio</td>
+            <td>M</td>
+            <td>28</td>
+            <td>Programmer</td>
+        </tr>
+        <tr>
+            <td>Gustavo</td>
+            <td>M</td>
+            <td>42</td>
+            <td>Teacher</td>
+
+        </tr>
+        <tr>
+            <td>Helio</td>
+            <td>M</td>
+            <td>19</td>
+            <td>Seller</td>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td>F</td>
+            <td>39</td>
+            <td>Doctor</td>
+        </tr>
+        <tr>
+            <td>Otavio</td>
+            <td>M</td>
+            <td>22</td>
+            <td>Nutritionist</td>
+        </tr>
+
+
+    </table>
+</body>
+</html>
