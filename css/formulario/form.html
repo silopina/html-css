@@ -12,12 +12,18 @@
 </head>
 <body>  
     <h1>my first form</h1>
-    <form action="cadastro.php" method="post" autocomplete="off">
-        <p><label for="inome">Name:</label>
-            <input type="text" name="nome" id="inome"></p>
-        <p><label for="isobrenome">Surname:</label>
-             <input type="text" name="Sobrenome" id="isobrenome"></p>
-        <p><input type="submit" value="Enviar"></p>
+   
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p><label for="issue"> Usuario:</label>
+            <input type="text" name="ssue" id="issue" required minlength="5" maxlength="15" size="10" placeholder="user name" autocomplete="username">
+        </p>
+        <p><label for="isen">Senha:</label>
+            <input type="password" name="Sen" id="isen" required minlength="8" maxlength="20" size="8" placeholder="min 8 letter" autocomplete="current-password"> 
+        </p>
+        <p>
+            <input type="submit" value="To Send">
+            <input type="reset" value="Reset">
+        </p>
     </form>
 
 </body>
