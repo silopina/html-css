@@ -22,7 +22,7 @@ h1{
 @media screen and (orientation: portrait) {
     body{
         background: url(../imagens/cev-portrait.jpg);
-        background-position: center bottom;
+        background-position:   center;
     }
     
                 
