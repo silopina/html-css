@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="estilos/media-query.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>My Website</h1>
         <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()"> menu </span>
@@ -19,29 +19,36 @@
                 <li><a href="#">Option 3</a></li>
                 <li><a href="#">Option 4</a></li>
                 <li><a href="#">Option 5</a></li>
-
             </ul>
         </menu>
-
     </header>
     <main>
-       
-            <article>
-                <h2>Testing Media Queries</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga voluptates, alias recusandae exercitationem eaque expedita amet dolores excepturi quaerat iusto placeat aperiam asperiores, natus voluptate quam, voluptatibus magnam harum dolore. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus, iure! Nesciunt placeat quaerat dolorum magni dicta consectetur dolores. Quod esse expedita praesentium sunt a voluptates nobis earum illo consectetur repudiandae!</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia ullam ab odio deserunt autem et excepturi molestiae voluptatum, minus, inventore expedita. Quis nesciunt atque eos sequi consequatur possimus, ipsa iste! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus delectus mollitia dolores perspiciatis, maiores dignissimos molestias est quibusdam odio? Nobis odio ea magnam veniam illum, voluptas nihil excepturi nostrum iure.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci repudiandae ipsa laborum autem modi rerum veritatis, quo delectus ad suscipit sunt, quos, sequi cumque blanditiis dicta dolores reprehenderit beatae amet. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos ullam saepe, necessitatibus exercitationem vel similique harum cum illum non alias, reiciendis consectetur officia labore voluptatum iste? Illum eaque suscipit veritatis.</p>
-            </article>
-        
+        <article>
+            <h2>Testing Media Queries</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus placeat et aut nulla voluptas minus dolorum! Deleniti error architecto saepe reprehenderit recusandae? Labore eveniet voluptates eaque tenetur esse voluptatibus ipsam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus iste labore eius dicta minus, expedita quae vitae asperiores, odio perspiciatis, obcaecati corrupti quasi laboriosam nihil doloribus unde nesciunt excepturi beatae!</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque aspernatur praesentium iusto, ipsa ipsam alias quas odit? Suscipit, necessitatibus. Explicabo repellat maiores voluptate blanditiis nihil tempore iusto, dicta quo similique. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique quos provident natus excepturi, quas laborum ex corrupti rem vel officia repellendus vitae recusandae alias veritatis odio architecto beatae, quia eius!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quas mollitia autem laborum voluptatum aliquam quis optio labore, deleniti voluptates pariatur quo reprehenderit deserunt, nulla ipsa ea numquam provident maxime! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate corrupti eum eos optio, repellat animi accusamus architecto earum quidem quis sit. Excepturi reprehenderit maxime magnam ducimus impedit pariatur, animi aliquam.</p>
+        </article>
     </main>
     <script>
-        function clickMenu() {
-            if(itens.style.display=='block'){
-                itens.style.display='none'
+        function mudouTamanho() {
+           
+            if(window.innerWidth >= 768) {
+                itens.style.display = 'block';
             } else{
-                itens.style.display='block'
+                itens.style.display = 'none';
+            }
+        }
+
+        function clickMenu() {
+            
+            if(itens.style.display === 'block') {
+                itens.style.display = 'none';
+            } else{
+                itens.style.display = 'block';
             }
         }
     </script>
 </body>
 </html>
+
